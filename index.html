@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乌托邦小丑学院</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        
+        .colored-text {
+            background-image: linear-gradient(to right, #ff69b4, #33cc33, #6666ff, #ffff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 210px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .login-box {
+            width: 360px;
+            height: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .input-field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            justify-content: space-between;
+        }
+        
+        .label {
+            flex: 1;
+            text-align: left;
+            font-size: 22px;
+        }
+        
+        .input-field input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 18px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #5c67f2;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+        }
+        
+        button:hover {
+            background-color: #4a54e1;
+        }
+        
+        p {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./static/img/logo.png" alt="Logo" class="logo">
+        <span class="colored-text">UIC</span>
+    </div>
+    
+    <p style="text-align:center; font-size:56px; font-weight:bold;">乌托邦小丑学院</p>
+
+    <div class="login-box">
+        <form action="#" method="post" id="login-form">
+            <div class="input-field">
+                <label for="username" class="label">账号:</label>
+                <input type="text" id="username" name="username" placeholder="请输入您的账号">
+            </div>
+            
+            <div class="input-field">
+                <label for="password" class="label">密码:</label>
+                <input type="password" id="password" name="password" placeholder="请输入您的密码">
+            </div>
+            
+            <button type="submit">登录</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("您已被劝退!");
+        });
+    </script>
+
+</body>
+</html>
